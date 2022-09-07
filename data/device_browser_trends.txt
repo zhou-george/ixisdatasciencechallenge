@@ -1,0 +1,284 @@
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "desktop")$sum_sessions ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "desktop")$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-157832  -41658   -8905   67269  124994 
+
+Coefficients:
+                                                                 Estimate Std. Error t value
+(Intercept)                                                      -9477472    4079270  -2.323
+filter(db_sc_final_graph, dim_deviceCategory == "desktop")$month      628        260   2.416
+                                                                 Pr(>|t|)  
+(Intercept)                                                        0.0425 *
+filter(db_sc_final_graph, dim_deviceCategory == "desktop")$month   0.0363 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 94450 on 10 degrees of freedom
+Multiple R-squared:  0.3685,	Adjusted R-squared:  0.3053 
+F-statistic: 5.835 on 1 and 10 DF,  p-value: 0.03634
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "mobile")$sum_sessions ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "mobile")$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-139508  -51000    2501   57973  110369 
+
+Coefficients:
+                                                                  Estimate Std. Error t value
+(Intercept)                                                     -1.037e+07  3.405e+06  -3.045
+filter(db_sc_final_graph, dim_deviceCategory == "mobile")$month  6.801e+02  2.170e+02   3.134
+                                                                Pr(>|t|)  
+(Intercept)                                                       0.0124 *
+filter(db_sc_final_graph, dim_deviceCategory == "mobile")$month   0.0106 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 78830 on 10 degrees of freedom
+Multiple R-squared:  0.4955,	Adjusted R-squared:  0.445 
+F-statistic: 9.822 on 1 and 10 DF,  p-value: 0.01062
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "tablet")$sum_sessions ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "tablet")$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-100918  -32045    2130   39768   67169 
+
+Coefficients:
+                                                                  Estimate Std. Error t value
+(Intercept)                                                     -6073641.9  2322531.4  -2.615
+filter(db_sc_final_graph, dim_deviceCategory == "tablet")$month      399.2      148.0   2.697
+                                                                Pr(>|t|)  
+(Intercept)                                                       0.0258 *
+filter(db_sc_final_graph, dim_deviceCategory == "tablet")$month   0.0224 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 53770 on 10 degrees of freedom
+Multiple R-squared:  0.4211,	Adjusted R-squared:  0.3632 
+F-statistic: 7.273 on 1 and 10 DF,  p-value: 0.02243
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "desktop")$sum_transactions ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "desktop")$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4952.4 -1382.3   -95.3  2155.2  3496.9 
+
+Coefficients:
+                                                                   Estimate Std. Error t value
+(Intercept)                                                      -3.733e+05  1.282e+05  -2.911
+filter(db_sc_final_graph, dim_deviceCategory == "desktop")$month  2.461e+01  8.172e+00   3.011
+                                                                 Pr(>|t|)  
+(Intercept)                                                        0.0155 *
+filter(db_sc_final_graph, dim_deviceCategory == "desktop")$month   0.0131 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2969 on 10 degrees of freedom
+Multiple R-squared:  0.4755,	Adjusted R-squared:  0.423 
+F-statistic: 9.065 on 1 and 10 DF,  p-value: 0.0131
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "mobile")$sum_transactions ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "mobile")$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2010.4  -515.1  -148.3   666.1  2031.7 
+
+Coefficients:
+                                                                  Estimate Std. Error t value
+(Intercept)                                                     -1.663e+05  4.853e+04  -3.426
+filter(db_sc_final_graph, dim_deviceCategory == "mobile")$month  1.082e+01  3.093e+00   3.500
+                                                                Pr(>|t|)   
+(Intercept)                                                      0.00648 **
+filter(db_sc_final_graph, dim_deviceCategory == "mobile")$month  0.00573 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1124 on 10 degrees of freedom
+Multiple R-squared:  0.5505,	Adjusted R-squared:  0.5056 
+F-statistic: 12.25 on 1 and 10 DF,  p-value: 0.005729
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "tablet")$sum_transactions ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "tablet")$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2436.0  -962.6  -349.8  1081.0  1938.4 
+
+Coefficients:
+                                                                  Estimate Std. Error t value
+(Intercept)                                                     -1.244e+05  6.530e+04  -1.905
+filter(db_sc_final_graph, dim_deviceCategory == "tablet")$month  8.214e+00  4.162e+00   1.974
+                                                                Pr(>|t|)  
+(Intercept)                                                       0.0858 .
+filter(db_sc_final_graph, dim_deviceCategory == "tablet")$month   0.0767 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1512 on 10 degrees of freedom
+Multiple R-squared:  0.2803,	Adjusted R-squared:  0.2083 
+F-statistic: 3.895 on 1 and 10 DF,  p-value: 0.07669
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "desktop")$mean_ecr ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "desktop")$month)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.005861 -0.003625 -0.002605  0.001647  0.013436 
+
+Coefficients:
+                                                                   Estimate Std. Error t value
+(Intercept)                                                      -1.195e-01  2.558e-01  -0.467
+filter(db_sc_final_graph, dim_deviceCategory == "desktop")$month  8.991e-06  1.631e-05   0.551
+                                                                 Pr(>|t|)
+(Intercept)                                                         0.651
+filter(db_sc_final_graph, dim_deviceCategory == "desktop")$month    0.593
+
+Residual standard error: 0.005923 on 10 degrees of freedom
+Multiple R-squared:  0.02951,	Adjusted R-squared:  -0.06754 
+F-statistic: 0.3041 on 1 and 10 DF,  p-value: 0.5934
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "mobile")$mean_ecr ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "mobile")$month)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-0.0024508 -0.0016236 -0.0009805  0.0024305  0.0036944 
+
+Coefficients:
+                                                                  Estimate Std. Error t value
+(Intercept)                                                     -1.883e-01  1.062e-01  -1.773
+filter(db_sc_final_graph, dim_deviceCategory == "mobile")$month  1.239e-05  6.769e-06   1.830
+                                                                Pr(>|t|)  
+(Intercept)                                                       0.1066  
+filter(db_sc_final_graph, dim_deviceCategory == "mobile")$month   0.0972 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.002459 on 10 degrees of freedom
+Multiple R-squared:  0.2509,	Adjusted R-squared:  0.176 
+F-statistic: 3.349 on 1 and 10 DF,  p-value: 0.09715
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "tablet")$mean_ecr ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "tablet")$month)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-0.0029157 -0.0018939  0.0003037  0.0014388  0.0029355 
+
+Coefficients:
+                                                                  Estimate Std. Error t value
+(Intercept)                                                      5.783e-02  8.998e-02   0.643
+filter(db_sc_final_graph, dim_deviceCategory == "tablet")$month -2.739e-06  5.735e-06  -0.478
+                                                                Pr(>|t|)
+(Intercept)                                                        0.535
+filter(db_sc_final_graph, dim_deviceCategory == "tablet")$month    0.643
+
+Residual standard error: 0.002083 on 10 degrees of freedom
+Multiple R-squared:  0.02231,	Adjusted R-squared:  -0.07546 
+F-statistic: 0.2281 on 1 and 10 DF,  p-value: 0.6432
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "desktop")$sum_QTY ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "desktop")$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-9282.3 -2426.0  -187.5  3902.1  6373.0 
+
+Coefficients:
+                                                                   Estimate Std. Error t value
+(Intercept)                                                      -694778.06  227057.41  -3.060
+filter(db_sc_final_graph, dim_deviceCategory == "desktop")$month      45.76      14.47   3.162
+                                                                 Pr(>|t|)  
+(Intercept)                                                        0.0120 *
+filter(db_sc_final_graph, dim_deviceCategory == "desktop")$month   0.0101 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5257 on 10 degrees of freedom
+Multiple R-squared:    0.5,	Adjusted R-squared:   0.45 
+F-statistic:    10 on 1 and 10 DF,  p-value: 0.01012
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "mobile")$sum_QTY ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "mobile")$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3326.9  -814.8  -281.9   986.1  3432.1 
+
+Coefficients:
+                                                                  Estimate Std. Error t value
+(Intercept)                                                     -3.000e+05  8.257e+04  -3.634
+filter(db_sc_final_graph, dim_deviceCategory == "mobile")$month  1.952e+01  5.263e+00   3.710
+                                                                Pr(>|t|)   
+(Intercept)                                                      0.00459 **
+filter(db_sc_final_graph, dim_deviceCategory == "mobile")$month  0.00404 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1912 on 10 degrees of freedom
+Multiple R-squared:  0.5792,	Adjusted R-squared:  0.5372 
+F-statistic: 13.77 on 1 and 10 DF,  p-value: 0.00404
+
+
+Call:
+lm(formula = filter(db_sc_final_graph, dim_deviceCategory == 
+    "tablet")$sum_QTY ~ filter(db_sc_final_graph, dim_deviceCategory == 
+    "tablet")$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4031.7 -1591.4  -561.9  1840.4  3394.0 
+
+Coefficients:
+                                                                  Estimate Std. Error t value
+(Intercept)                                                     -2.239e+05  1.117e+05  -2.005
+filter(db_sc_final_graph, dim_deviceCategory == "tablet")$month  1.479e+01  7.119e+00   2.077
+                                                                Pr(>|t|)  
+(Intercept)                                                       0.0728 .
+filter(db_sc_final_graph, dim_deviceCategory == "tablet")$month   0.0645 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2586 on 10 degrees of freedom
+Multiple R-squared:  0.3014,	Adjusted R-squared:  0.2315 
+F-statistic: 4.314 on 1 and 10 DF,  p-value: 0.06453
+

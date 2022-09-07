@@ -1,0 +1,12 @@
+Package: IXIS
+Type: Package
+Title: IXIS Data Science Challenge
+Version: 0.1.0
+Author: George Zhou
+Maintainer: George Zhou
+Description: IXIS Data Science Challenge. Run R/01_transform.R, 
+R/02_transform_and_test.R and 
+R/03_graphs.R in order without clearing workspace.
+License: 
+Encoding: UTF-8
+LazyData: true

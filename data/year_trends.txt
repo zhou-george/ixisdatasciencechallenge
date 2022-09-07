@@ -1,0 +1,113 @@
+
+Call:
+lm(formula = db_combined_final_test$sum_sessions ~ db_combined_final_test$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-398258 -105797  -10093  187413  247399 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                  -2.592e+07  8.935e+06  -2.901   0.0158 *
+db_combined_final_test$month  1.707e+03  5.695e+02   2.998   0.0134 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 206900 on 10 degrees of freedom
+Multiple R-squared:  0.4733,	Adjusted R-squared:  0.4207 
+F-statistic: 8.988 on 1 and 10 DF,  p-value: 0.01339
+
+
+Call:
+lm(formula = db_combined_final_test$sum_transactions ~ db_combined_final_test$month)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-8689.8 -3238.0   -81.9  4512.2  6445.1 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                  -663949.91  214640.93  -3.093  0.01138 * 
+db_combined_final_test$month      43.64      13.68   3.190  0.00965 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4969 on 10 degrees of freedom
+Multiple R-squared:  0.5044,	Adjusted R-squared:  0.4549 
+F-statistic: 10.18 on 1 and 10 DF,  p-value: 0.009649
+
+
+Call:
+lm(formula = db_combined_final_test$mean_ecr ~ db_combined_final_test$month)
+
+Residuals:
+       Min         1Q     Median         3Q        Max 
+-0.0023215 -0.0014311 -0.0000536  0.0004308  0.0034282 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)
+(Intercept)                  -9.824e-02  8.572e-02  -1.146    0.278
+db_combined_final_test$month  7.140e-06  5.463e-06   1.307    0.220
+
+Residual standard error: 0.001985 on 10 degrees of freedom
+Multiple R-squared:  0.1459,	Adjusted R-squared:  0.0605 
+F-statistic: 1.708 on 1 and 10 DF,  p-value: 0.2205
+
+
+Call:
+lm(formula = db_combined_final_test$sum_QTY ~ db_combined_final_test$month)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14284.5  -5101.8   -329.9   7777.3  10949.8 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                  -1.219e+06  3.689e+05  -3.303  0.00797 **
+db_combined_final_test$month  8.007e+01  2.351e+01   3.405  0.00671 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 8542 on 10 degrees of freedom
+Multiple R-squared:  0.537,	Adjusted R-squared:  0.4907 
+F-statistic:  11.6 on 1 and 10 DF,  p-value: 0.006711
+
+
+Call:
+lm(formula = db_combined_final_test$addsToCart ~ db_combined_final_test$month)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-49377 -19269   1570  15181  48600 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)  
+(Intercept)                  2956263.53 1316075.01   2.246   0.0485 *
+db_combined_final_test$month    -178.59      83.88  -2.129   0.0591 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 30470 on 10 degrees of freedom
+Multiple R-squared:  0.3119,	Adjusted R-squared:  0.2431 
+F-statistic: 4.533 on 1 and 10 DF,  p-value: 0.0591
+
+
+Call:
+lm(formula = db_combined_final_test$cart_retention ~ db_combined_final_test$month)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.10104 -0.04325 -0.00570  0.02913  0.16779 
+
+Coefficients:
+                               Estimate Std. Error t value Pr(>|t|)   
+(Intercept)                  -1.351e+01  3.236e+00  -4.176  0.00190 **
+db_combined_final_test$month  8.778e-04  2.062e-04   4.256  0.00167 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07492 on 10 degrees of freedom
+Multiple R-squared:  0.6443,	Adjusted R-squared:  0.6087 
+F-statistic: 18.11 on 1 and 10 DF,  p-value: 0.001673
+
+[1] 0.2588362
